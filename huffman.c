@@ -12,16 +12,13 @@ typedef struct List {
 	Tree *node;
 } List;
 
-// При наличии двух и более частот равных 0 получаем бесконечный цикл
 void createEncodingTable(Code *table, uint8_t length)
 {
 	List *nodeList = List_New();
 
-	// Создаем список деревьев состоящих из одной вершины
 	for (int i = 0; i < length; i++)
 		List_Insert(nodeList, Tree_New(table[i].freq, i));
 
-	// Объединяем по алгоритму Хаффмана деревья
 	while (--length) {
 		Tree *a = List_ExtractFirst(nodeList);
 		Tree *b = List_ExtractFirst(nodeList);
