@@ -1,8 +1,6 @@
 #include "huffman.h"
 #include <string.h>
 
-// Чтобы ускорить два поиска можно использовать hash table
-
 #define printBits(word, count) \
 do { \
 	for (int i = 0; i < count; i++) \
