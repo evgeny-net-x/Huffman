@@ -6,5 +6,5 @@
 | Amount of codes in table   | Amount of codes in file         | sym(1), count(1), code(4)  |
 
 Example:
-	- `./Huffman encode file.txt > file_compressed`
-	- `./Huffman decode file_compressed > file_copy.txt`
+- `./Huffman encode file.txt > file_compressed`
+- `./Huffman decode file_compressed > file_copy.txt`
