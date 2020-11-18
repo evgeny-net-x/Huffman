@@ -1,9 +1,9 @@
 P=Huffman
-SRC=$(shell find . -type f -name "*.c")
+SRC=$(shell find . -type f -name "*.cpp")
 HDR=$(shell find . -type f -name "*.h")
 OBJ=$(SRC:.c=.o)
-CFLAGS=-c -g -O3 -Wall -Wno-unused-function
-CC=gcc
+CFLAGS=-c -O3 -Wall
+CC=g++
 
 $(echo SRC)
 all: $(SRC) $(P)
